@@ -2,3 +2,67 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+body {
+  background-color: $bg-color-yellow;
+  color: $accent-color-black;
+}
+
+//offset border
+.main-border {
+  width: 92%;
+  height: 90%;
+  border: 2px solid $accent-color-black;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+//positions logo on border
+.center-position-logo-container {
+  position: fixed;
+  top: 0%;
+  width: 92%;
+}
+
+//positions logo within center of row
+.center-position-logo-col {
+  display: flex;
+  justify-content: center;
+}
+
+//style for product description
+.product-info {
+  font-family: $main-text-font;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  & p {
+  font-size: 35px;
+  font-weight: bold;
+  }
+}
+
+//product-info positioning based on media breakpoints
+@media only screen and (max-width: 600px) {
+    .product-info {
+        top: 9%;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .product-info {
+        top: 17%;
+        position: absolute;
+        padding-right: 15px;
+    }
+}
+
+
+
+

@@ -2,3 +2,18 @@
  * Materialize sass variable
  * (see https://github.com/mkhairi/materialize-sass/blob/master/app/assets/stylesheets/materialize/components/_variables.scss)
  * ------------------------------------- */
+
+// Imported fonts
+@import url('https://fonts.googleapis.com/css?family=Yesteryear');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+// Theme color bundles
+$bg-color-yellow: #FED700;
+$accent-color-black: #161925;
+
+
+// Font variables
+$mr-cocktail-font: 'Yesteryear', cursive;
+$main-text-font: 'Poppins', sans-serif;
+
+

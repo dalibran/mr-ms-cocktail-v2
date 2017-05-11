@@ -1,0 +1,10 @@
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: $bg-color-yellow;
+  font-family: $mr-cocktail-font;
+  font-size: 20px;
+  z-index: 400;
+}

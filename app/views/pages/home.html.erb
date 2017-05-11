@@ -1,2 +1,29 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- positions Mr. Cocktail logo at top of screen -->
+<div class="container">
+  <div class="row">
+    <div class="col s12 center-position-logo-col">
+      <div class="main-logo">
+        <%= image_tag 'bartender-male.svg', height: 55 , width: 55 %>
+        <p>Mr.Cocktail</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- creates main border and positions content within -->
+<div class="main-border">
+  <div class="row">
+    <div class="col s12 l6">
+      <div class="card">
+      </div>
+    </div>
+    <div class="col s12 l6">
+      <div class="product-info center-align">
+        <p>Create fun cocktail recipes for your friends. Sign in with Facebook to get started!</p>
+        <%= link_to "http://www.facebook.com", class: 'btn-signin' do %>
+          <%= image_tag 'facebook.svg', class: 'svg' %>  Sign in with Facebook
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

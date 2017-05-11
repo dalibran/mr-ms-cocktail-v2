@@ -1,0 +1,23 @@
+.btn-signin {
+  border: 2px solid $accent-color-black;
+  width: 236px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $accent-color-black;
+  & a {
+    font-weight: lighter;
+  }
+  &:hover {
+    border-color: white;
+    fill: white;
+    background-color: #2C4288;
+    color: white;
+  }
+  & svg {
+    margin-right: 11px;
+    width: 35px;
+    height: 35px;
+  }
+}
