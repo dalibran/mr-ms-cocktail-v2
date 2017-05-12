@@ -10,6 +10,29 @@
   padding-bottom: 5em;
 }
 
+// Set page requirements for sticky footer
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: 100vh;
+}
+
+// Lightens font when needed
+.lighten-font {
+  font-weight: lighter;
+}
+
+// Vertically align grid row
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 // Backgrounds
 .bg-black {
   background: #4a4a4a;

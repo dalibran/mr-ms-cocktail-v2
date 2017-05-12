@@ -1,1 +1,25 @@
-// Your footer style
+
+//footer styles
+.footer-colors {
+  background-color: $accent-color-black;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.link-color-fix a {
+  color: inherit !important;
+}
+
+.footer-copyright-color {
+  background-color: rgba(51, 51, 51, 0.3) !important;
+}
+
+.footer-icons {
+  display: inline-block;
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+// Padding fix for Sass icon
+.sass-padding-fix {
+  padding-right: 25px !important;
+}
