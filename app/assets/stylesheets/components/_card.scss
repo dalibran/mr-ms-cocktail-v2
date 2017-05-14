@@ -1,0 +1,130 @@
+.card-custom {
+  height: 35vh;
+  width: 80%;
+  margin-top: 35px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.border-top {
+  border-top: 2px solid $accent-color-black;
+  position: absolute;
+  width: 94%;
+  top: 10%;
+}
+
+.border-bottom {
+  border-bottom: 2px solid $accent-color-black;
+  position: absolute;
+  width: 94%;
+  bottom: 7%;
+}
+
+.card-border {
+  border-right: 2px solid $accent-color-black;
+  border-left: 2px solid $accent-color-black;
+  width: 94%;
+  height: 83%;
+  position: absolute;
+  top:3%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.card-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color-yellow;
+  font-family: $mr-cocktail-font;
+  z-index: 400;
+  width: 35%;
+  line-height: 0.5;
+  & p {
+    margin-left: 4px;
+  }
+}
+
+.center-position-logo-card {
+  position: absolute;
+  bottom: 0%;
+}
+
+.center-position-avatar-card {
+  position: absolute;
+  top: 0%;
+}
+
+.ingredients {
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  & svg {
+    height: 40px;
+    margin-top: 0px;
+  }
+  & ul li {
+    display: flex;
+    align-items: center;
+    font-family: $mr-cocktail-font;
+    font-size: 15px;
+  }
+  & ul li p {
+    margin-left: 12px;
+  }
+}
+
+.instructions {
+  font-family: $mr-cocktail-font;
+  font-size: 25px;
+  width: 134px;
+  & p {
+  text-align: center;
+  }
+}
+
+.avatar-and-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color-yellow;
+  font-family: $mr-cocktail-font;
+  z-index: 400;
+  width: 35%;
+  font-size: 25px;
+  line-height: 0.5;
+  margin-top: 6px;
+  align-items: flex-start;
+  & p {
+    margin-top: 14px !important;
+  }
+}
+
+// adjusts card to be responsive on smaller screens
+@media only screen and (max-width: 917px) {
+    .card-custom {
+      width: 90%;
+      margin-top: 30px;
+    }
+    .vertical-align {
+      display: grid !important;
+    }
+    .product-info p {
+      font-size: 26px !important;
+      margin-top: 45px;
+    }
+    .avatar-and-title {
+      width: 44%;
+    }
+    .card-logo {
+      width: 44%;
+    }
+    .instructions {
+      font-size: 17px;
+      width: 90px;
+    }
+}

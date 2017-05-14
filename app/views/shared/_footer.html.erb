@@ -4,10 +4,10 @@
       <div class="col l6 s12">
         <h5>Mr. Cocktail v2</h5>
         <p class="lighten-font">
-          Mr. Cocktail v2 is a rethinking of a project originally created as an assignment at Le Wagon Montréal: a 9 week, full-time web dev bootcamp.
+          Mr. Cocktail v2 is a rethinking of a project originally created at <%= link_to 'Le Wagon Montréal', "http://www.lewagon.com/montreal" %>: a 9 week, full-time web dev bootcamp.
         </p>
       </div>
-      <div class="col l4 offset-l2 s12">
+      <div class="col l4 offset-l2 s12 center-align">
         <ul>
           <li class="footer-icons"><i class="icon-ruby-on-rails rails-color tooltipped" data-position="top" data-delay="50" data-tooltip="Ruby on Rails"></i></li>
           <li class="footer-icons"><i class="icon-html5-alt html5-color tooltipped" data-position="top" data-delay="50" data-tooltip="HTML5"></i></li>
@@ -20,9 +20,12 @@
   </div>
   <div class="footer-copyright footer-copyright-color">
     <div class="container link-color-fix">
-      © 2017 Dana Alibrandi
-      <a href="http://www.linkedin.com/in/dalibran">  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      <a class="right" href="https://github.com/dalibran/mr-ms-cocktail-v2"><i class="fa fa-github"></i>  View the Repo</a>
+      <%= link_to "http://www.linkedin.com/in/dalibran" do %>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i> Dana Alibrandi
+      <% end %>
+      <%= link_to "https://github.com/dalibran/mr-ms-cocktail-v2", class: "right" do %>
+        <i class="fa fa-github"></i>  View the Repo
+      <% end %>
     </div>
   </div>
 </footer>

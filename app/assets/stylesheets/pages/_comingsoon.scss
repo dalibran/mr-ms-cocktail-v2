@@ -1,0 +1,25 @@
+.row-wrapper {
+  margin-top: 66px;
+  & div h3 {
+    font-family: $mr-cocktail-font !important;
+    font-size: 5.92rem;
+    text-align: center;
+  }
+  & div p {
+    font-family: $main-text-font;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .row-wrapper {
+      & div h3 {
+        font-size: 3.92rem;
+      }
+      & div p {
+        width: 68%
+      }
+    }
+}

@@ -10,6 +10,12 @@
   padding-bottom: 5em;
 }
 
+// Center-Align Content
+.justify-content {
+  display: flex;
+  justify-content: center;
+}
+
 // Set page requirements for sticky footer
 body {
   display: flex;
@@ -25,6 +31,10 @@ main {
 // Lightens font when needed
 .lighten-font {
   font-weight: lighter;
+  & a {
+    color: inherit;
+    font-weight: bolder;
+  }
 }
 
 // Vertically align grid row
