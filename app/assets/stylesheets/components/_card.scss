@@ -105,7 +105,9 @@
 }
 
 // adjusts card to be responsive on smaller screens
-@media only screen and (max-width: 917px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
     .card-custom {
       width: 90%;
       margin-top: 30px;
